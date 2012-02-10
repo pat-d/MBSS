@@ -1,0 +1,38 @@
+<?php
+/**
+ * @file
+ * Code for the Fusion Slideshow feature.
+ */
+
+include_once('fusion_slideshow.features.inc');
+
+/**
+ * @file
+ * Implementation of template_preprocess_views_view()
+ */
+function fusion_slideshow_preprocess_views_view(&$vars){
+  if($vars['name'] == 'fusion_slideshow'){
+
+    //include basic CSS for all fusion slideshows
+    drupal_add_css(drupal_get_path('module', 'fusion_slideshow').'/theme/default/fusion_slideshow-styles.css', 'theme');
+    
+    //include basic JS for all fusion slideshows
+    drupal_add_js(drupal_get_path('module', 'fusion_slideshow').'/theme/default/fusion_slideshow-script.js');
+
+    //include theme-specific CSS if it exists
+    $custom_theme = menu_get_custom_theme();
+    if (!empty($user->theme) && drupal_theme_access($user->theme)) {
+      $current_theme = $user->theme;
+    }
+    elseif (!empty($custom_theme) && !($exclude_admin_theme && $custom_theme == variable_get('admin_theme', '0'))) {
+      // Don't return the admin theme if we're editing Fusion Apply settings.
+      $current_theme = $custom_theme;
+    }
+    else {
+      $current_theme = variable_get('theme_default', 'bartik');
+    }
+    if (file_exists(drupal_get_path('module', 'fusion_slideshow').'/theme/'.$current_theme.'-slideshow/'.$current_theme.'-slideshow.css')){
+    drupal_add_css(drupal_get_path('module', 'fusion_slideshow').'/theme/'.$current_theme.'-slideshow/'.$current_theme.'-slideshow.css', 'theme');
+    }
+  }
+}

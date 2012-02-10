@@ -1,0 +1,11 @@
+<?php 
+
+/**
+ * Implements hook_install().
+ *
+ * Perform configuration actions that cannot be handled by Features.
+ */
+ 
+function content_fusion_install() {
+
+}

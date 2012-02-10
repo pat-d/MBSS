@@ -1,0 +1,39 @@
+<?php 
+
+/**
+ * Implements hook_install().
+ *
+ * Perform configuration actions that cannot be handled by Features.
+ *  - Adds pathauto patterns for node and @TODO taxonomy terms. 
+ *  - @TODO Direct user to update their path aliases.
+ *  - Sets configuration for Superfish block 1.
+ *  - @TODO Create Menu Block for sub-navigation
+ *  - Places Superfish block in main-menu region for default theme
+ *  - @TODO Place Menu Block in Sidebar First region for default theme
+ */
+ 
+function nav_fusion_install() {
+  
+  //set up pathauto defaults
+  variable_set('pathauto_node_pattern', '[node:menu-link:parent:url]/[node:title]');
+  
+  //change a few settings for Superfish block 1
+  //"none" style so that the theme can style the menu without interference
+  variable_set('superfish_style_1', 'none');
+  //no auto-arrows
+  variable_set('superfish_arrow_1', 0);
+  //no drop-shadows
+  variable_set('superfish_shadow_1', 0);
+  
+  //Enable blocks
+  $default_theme = variable_get('theme_default', 'fusion_starter');
+   
+    $query = db_update('block')
+      ->fields(array(
+        'region' => 'main_menu',
+      ))
+      ->condition('module', 'superfish')
+      ->condition('delta', '1')
+      ->condition('theme', $default_theme)
+      ->execute(); 
+}

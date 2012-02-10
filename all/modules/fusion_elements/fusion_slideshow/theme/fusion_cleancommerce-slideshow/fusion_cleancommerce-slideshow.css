@@ -1,0 +1,428 @@
+/* @group All Slideshows*/
+
+.view-slideshow .views-row{
+ border: none;
+}
+/* @group Slide content*/
+.view-slideshow .fusion-slide-content {
+  color: #000;
+  text-shadow: 1px 1px 1px #fff;
+}
+  
+.view-slideshow img {
+
+}
+
+.view-slideshow .view-content p{
+  font-size: 1em;
+}
+
+.content-region .view-slideshow .view-content p {
+  font-size: .8em;
+}
+
+.view-slideshow .view-content h2 {
+ }
+
+/* @end */
+
+
+/* @group Slideshow controls*/
+
+/* @group Default/Gray */
+.view-slideshow .views-slideshow-controls-top,
+.cleancommerce-color-gray .view-slideshow .views-slideshow-controls-top,
+.view-slideshow.cleancommerce-color-gray .views-slideshow-controls-top {
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+.view-slideshow .views-slideshow-controls-text-pause,
+.cleancommerce-color-gray .view-slideshow .views-slideshow-controls-text-pause,
+.view-slideshow.cleancommerce-color-gray .views-slideshow-controls-text-pause {
+  display: block;
+  text-indent: -9999px;
+  float: left;
+}
+
+.view-slideshow .views-slideshow-controls-text-previous,
+.cleancommerce-color-gray .view-slideshow .views-slideshow-controls-text-previous,
+.view-slideshow.cleancommerce-color-gray .views-slideshow-controls-text-previous {
+  background: transparent url(images/slideshow-nav-controls.png) no-repeat 0 0;
+  display: block;
+  height: 49px;
+  margin-left: -28px;
+  text-align: left;
+  text-indent: -9999px;
+  width: 28px;
+  float: left;
+}
+
+.view-slideshow .views-slideshow-controls-text-previous:hover,
+.cleancommerce-color-gray .view-slideshow .views-slideshow-controls-text-previous:hover,
+.view-slideshow.cleancommerce-color-gray .views-slideshow-controls-text-previous:hover {
+  background-position: 0 -51px;
+  display: block;
+  cursor: pointer;
+}
+
+.view-slideshow .views-slideshow-controls-text-next,
+.cleancommerce-color-gray .view-slideshow .views-slideshow-controls-text-next,
+.view-slideshow.cleancommerce-color-gray .views-slideshow-controls-text-next {
+  background: transparent url(images/slideshow-nav-controls.png) no-repeat -36px 0;
+  display: block;
+  height: 49px;
+  margin-right: -28px;
+  float: right;
+  text-align: left;
+  text-indent: -9999px;
+  width: 28px;
+}
+
+.view-slideshow .views-slideshow-controls-text-next:hover,
+.cleancommerce-color-gray .view-slideshow .views-slideshow-controls-text-next:hover,
+.view-slideshow.cleancommerce-color-gray .views-slideshow-controls-text-next:hover  {
+  background-position: -36px -51px;
+  display: block;
+  cursor: pointer;
+}
+
+.view-slideshow.medium-fusion-slideshow .views-slideshow-controls-text-previous {
+  margin-left: -20px;
+} 
+
+.view-slideshow.medium-fusion-slideshow .views-slideshow-controls-text-next {
+  margin-right: -20px;
+}
+
+.view-slideshow.small-fusion-slideshow .views-slideshow-controls-top {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  text-align: right;
+  background-color: rgba(255,255,255,.8);
+}
+
+/* all IEs */
+.ie .view-slideshow.small-fusion-slideshow .views-slideshow-controls-top{
+  background: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(
+  startColorstr=#CCFFFFFF, 
+  endColorstr=#CCFFFFFF,
+  GradientType=0
+  );
+  zoom: 1;
+}
+
+/* IE8 */
+.ie8 .view-slideshow.small-fusion-slideshow .views-slideshow-controls-top {
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(
+  startColorstr=#CCFFFFFF, 
+  endColorstr=#CCFFFFFF,
+  GradientType=0
+  );
+}
+
+.view-slideshow.small-fusion-slideshow .views-slideshow-controls-text-previous,
+.view-slideshow.small-fusion-slideshow .views-slideshow-controls-text-pause,
+.view-slideshow.small-fusion-slideshow .views-slideshow-controls-text-next {
+  background-image: none;
+  width: auto;
+  height: auto;
+  text-indent: 0;
+  float: none;
+  margin: 0;
+  display: inline;
+}
+
+/* @end */
+
+/* @group Blue */
+.cleancommerce-color-blue .view-slideshow .views-slideshow-controls-text-previous,
+.view-slideshow.cleancommerce-color-blue .views-slideshow-controls-text-previous {
+  background-position: -64px 0;
+ }
+
+.cleancommerce-color-blue .view-slideshow .views-slideshow-controls-text-previous:hover,
+.view-slideshow.cleancommerce-color-blue .views-slideshow-controls-text-previous:hover {
+  background-position: -64px -51px;
+}
+
+.cleancommerce-color-blue .view-slideshow .views-slideshow-controls-text-next,
+.view-slideshow.cleancommerce-color-blue .views-slideshow-controls-text-next {
+  background-position: -100px 0;
+}
+
+.cleancommerce-color-blue .view-slideshow .views-slideshow-controls-text-next:hover,
+.view-slideshow.cleancommerce-color-blue .views-slideshow-controls-text-next:hover  {
+  background-position: -100px -51px;
+}
+/* @end */
+
+/* @group Fuschia */
+.cleancommerce-color-fuschia .view-slideshow .views-slideshow-controls-text-previous,
+.view-slideshow.cleancommerce-color-fuschia .views-slideshow-controls-text-previous {
+  background-position: -128px 0;
+ }
+
+.cleancommerce-color-fuschia .view-slideshow .views-slideshow-controls-text-previous:hover,
+.view-slideshow.cleancommerce-color-fuschia .views-slideshow-controls-text-previous:hover {
+  background-position: -128px -51px;
+
+}
+
+.cleancommerce-color-fuschia .view-slideshow .views-slideshow-controls-text-next,
+.view-slideshow.cleancommerce-color-fuschia .views-slideshow-controls-text-next {
+  background-position: -164px 0;
+}
+
+.cleancommerce-color-fuschia .view-slideshow .views-slideshow-controls-text-next:hover,
+.view-slideshow.cleancommerce-color-fuschia .views-slideshow-controls-text-next:hover  {
+  background-position: -164px -51px;
+}
+/* @end */
+
+/* @group Green */
+.cleancommerce-color-green .view-slideshow .views-slideshow-controls-text-previous,
+.view-slideshow.cleancommerce-color-green .views-slideshow-controls-text-previous {
+  background-position: -192px 0;
+ }
+
+.cleancommerce-color-green .view-slideshow .views-slideshow-controls-text-previous:hover,
+.view-slideshow.cleancommerce-color-green .views-slideshow-controls-text-previous:hover {
+  background-position: -192px -51px;
+}
+
+.cleancommerce-color-green .view-slideshow .views-slideshow-controls-text-next,
+.view-slideshow.cleancommerce-color-green .views-slideshow-controls-text-next {
+  background-position: -229px 0;
+}
+
+.cleancommerce-color-green .view-slideshow .views-slideshow-controls-text-next:hover,
+.view-slideshow.cleancommerce-color-green .views-slideshow-controls-text-next:hover  {
+  background-position: -229px -51px;
+}
+/* @end */
+
+/* @end */
+
+/* @group with border skin */
+.view-slideshow.cleancommerce-thin-border .view-content,
+.view-slideshow.cleancommerce-color-gray.cleancommerce-thin-border .view-content,
+.cleancommerce-color-gray.cleancommerce-thin-border .view-slideshow .view-content{
+  border: 1px solid #666;
+}
+
+.view-slideshow.cleancommerce-color-blue.cleancommerce-thin-border .view-content,
+.cleancommerce-color-blue.cleancommerce-thin-border .view-slideshow .view-content{
+  border: 1px solid #1284dc;
+}
+
+.view-slideshow.cleancommerce-color-fuschia.cleancommerce-thin-border .view-content,
+.cleancommerce-color-fuschia.cleancommerce-thin-border .view-slideshow .view-content{
+  border: 1px solid #d403cc;
+}
+
+.view-slideshow.cleancommerce-color-green.cleancommerce-thin-border .view-content,
+.cleancommerce-color-green.cleancommerce-thin-border .view-slideshow .view-content{
+  border: 1px solid #8fbd01;
+}
+/*offset for controls*/
+.view-slideshow.cleancommerce-thin-border .views-slideshow-controls-text-previous{
+  margin-left: -29px;
+}
+
+.view-slideshow.cleancommerce-thin-border .views-slideshow-controls-text-next{
+  margin-right: -29px;
+}
+
+.view-slideshow.medium-fusion-slideshow.cleancommerce-thin-border .views-slideshow-controls-text-previous,
+.view-slideshow.small-fusion-slideshow.cleancommerce-thin-border .views-slideshow-controls-text-previous{
+  margin-left: -21px;
+}
+
+.view-slideshow.medium-fusion-slideshow.cleancommerce-thin-border .views-slideshow-controls-text-next,
+.view-slideshow.small-fusion-slideshow.cleancommerce-thin-border .views-slideshow-controls-text-next{
+  margin-right: -21px;
+}
+/* @end */
+
+/* @end */
+
+/* @group large slideshow*/
+
+.view-slideshow.large-fusion-slideshow .views-slideshow-controls-top {
+  width: 940px;
+  margin-top: 128px;
+  }
+
+.large-fusion-slideshow .view-content {
+  font-size: 1.2em;
+}
+.large-fusion-slideshow .fusion-slide-content{
+  background-image: linear-gradient(
+  left, 
+  rgba(255,255,255,1) 10%, 
+  rgba(255,255,255,0) 100%
+  ); /* w3c */
+  background-image: -o-linear-gradient(
+  left, 
+  rgba(255,255,255,1) 10%,  
+  rgba(255,255,255,0) 100%
+  ); /* opera */
+  background-image: -webkit-gradient(
+  linear, left top, right top, 
+  from(rgba(255,255,255,1)),
+  to(rgba(255,255,255,0)), 
+  color-stop(.1, rgba(255,255,255,1))
+  );  /* webkit */
+  background-image: -moz-linear-gradient(
+  top, 
+  rgba(255,255,255,1) 10%,  
+  rgba(255,255,255,0) 100%
+  ); /* firefox */
+  font-size: 1.2em;
+}
+
+/* all IEs */
+.ie .large-fusion-slideshow .fusion-slide-content{
+  background: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(
+  startColorstr=#FFFFFFFF, 
+  endColorstr=#00FFFFFF,
+  GradientType=1
+  );
+  position: relative; /* Required to enable cleartype in IE when using filter */ 
+  zoom: 1;
+}
+
+/* IE8 */
+.ie8 .large-fusion-slideshow .fusion-slide-content {
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(
+  startColorstr=#FFFFFFFF, 
+  endColorstr=#00FFFFFF,
+  GradientType=1
+  );
+}
+
+.large-fusion-slideshow .fusion-slide-content h2,
+.large-fusion-slideshow .fusion-slide-content p,
+.large-fusion-slideshow .fusion-slide-content span.button a{
+  max-width: 45%;
+  margin-left: 36px;
+}
+
+.large-fusion-slideshow .fusion-slide-content h2{
+  padding-top: 1em;
+}
+
+/* @end */
+
+/* @group medium slideshows*/
+
+.view-slideshow.medium-fusion-slideshow .views-slideshow-controls-top {
+  width: 480px;
+  margin-top: 120px;
+  }
+  
+  .view-slideshow.medium-fusion-slideshow img {
+ 
+  }
+
+.medium-fusion-slideshow .fusion-slide-content{
+background-image: linear-gradient(
+  left, 
+  rgba(255,255,255,1) 10%, 
+  rgba(255,255,255,0) 100%
+); /* w3c */
+background-image: -o-linear-gradient(
+  left, 
+  rgba(255,255,255,1) 10%,  
+  rgba(255,255,255,0) 100%
+); /* opera */
+background-image: -webkit-gradient(
+  linear, left top, right top, 
+  from(rgba(255,255,255,1)),
+  to(rgba(255,255,255,0)), 
+  color-stop(.1, rgba(255,255,255,1))
+);  /* webkit */
+background-image: -moz-linear-gradient(
+  top, 
+  rgba(255,255,255,1) 10%,  
+  rgba(255,255,255,0) 100%
+); /* firefox */
+font-size: 1.2em;
+}
+
+/* all IEs */
+.ie .medium-fusion-slideshow .fusion-slide-content {
+  background: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(
+  startColorstr=#FFFFFFFF, 
+  endColorstr=#00FFFFFF,
+  GradientType=1
+  );
+  position: relative; /* Required to enable cleartype in IE when using filter */ 
+  zoom: 1;
+}
+
+/* IE8 */
+.ie8 .medium-fusion-slideshow .fusion-slide-content {
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(
+  startColorstr=#FFFFFFFF, 
+  endColorstr=#00FFFFFF,
+  GradientType=1
+  );
+}
+
+.medium-fusion-slideshow .fusion-slide-content h2,
+.medium-fusion-slideshow .fusion-slide-content p,
+.medium-fusion-slideshow .fusion-slide-content span.button a {
+  max-width: 80%;
+  margin-left: 18px;
+}
+
+.medium-fusion-slideshow .fusion-slide-content h2 {
+  padding-top: 1em;
+}
+
+/* @end */
+
+/* @group small slideshows*/
+
+.view-slideshow.small-fusion-slideshow .views-slideshow-controls-top {
+  width: 220px;
+  margin-top: 48px;
+  }
+
+.small-fusion-slideshow .fusion-slide-content {
+  width: 100%;
+  font-size: 1em;
+  background: transparent none;
+}
+
+.small-fusion-slideshow .fusion-slide-content * {
+  text-shadow: none;
+}
+
+.view-slideshow.small-fusion-slideshow img{
+  position: relative;
+}
+
+.small-fusion-slideshow .fusion-slide-content h2{
+  font-size: 1.2em;
+  letter-spacing: 0;
+  margin-top: .6em;
+}
+
+.small-fusion-slideshow .fusion-slide-content p {
+  font-size: .9em;
+  margin: .6em 0 .6em;
+}
+
+.small-fusion-slideshow .fusion-slide-content .button a {
+  font-size: .9em;
+  padding: .2em .8em;
+}
+/* @end */

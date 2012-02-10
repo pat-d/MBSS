@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Code for the Content Fusion feature.
+ */
+
+include_once('content_fusion.features.inc');
+
+/**
+ * Implementation of hook_theme_registry_alter()
+ * Code for the Fusion Callout Node Block feature.
+ */
+
+function content_fusion_theme_registry_alter(&$theme_registry) {
+
+//register template for the calltoaction block
+$theme_registry['field__field_file_attachment'] = array(
+  'template' => drupal_get_path('module', 'content_fusion').'/theme/field--field-file-attachment',
+  'type' => 'module',
+);
+
+}
