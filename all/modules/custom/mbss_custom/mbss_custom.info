@@ -1,2 +1,4 @@
-name = MBSS
+name = MBSS Custom module
+description = Container for custom functionality needed for the MBSS website
 core = 7.x
+Package = Custom

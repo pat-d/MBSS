@@ -1,3 +1,7 @@
 <?php
 
+function mbss_custom_form_personnel_profiles_node_form_alter(&$form, &$form_state, $form_id) {
+  drupal_add_js(drupal_get_path('module', 'mbss_custom').'/js/mbss_custom.js', 'file');
+}
+
 ?>
